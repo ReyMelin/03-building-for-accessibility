@@ -25,24 +25,31 @@ body {
 }
 
 .nav a {
-  color: #cccccc;
+  color: #ffffff; /* improved contrast */
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
   margin: 0 15px;
 }
 
+.nav a:focus, .order-now:focus {
+  outline: 2px solid #E31837;
+  outline-offset: 2px;
+  background: #fff3f6;
+  color: #E31837;
+}
+
 .tagline {
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #bbbbbb;
+  color: #222222; /* improved contrast */
   margin: 30px 0 15px;
 }
 
 .description {
   font-size: 16px;
-  color: #bbbbbb;
+  color: #222222; /* improved contrast */
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.4;
@@ -52,7 +59,7 @@ body {
   width: 200px;
   display: inline-block;
   background: #E31837;
-  color: #801525;
+  color: #fff; /* improved contrast */
   padding: 12px 24px;
   font-size: 18px;
   text-transform: uppercase;
@@ -87,5 +94,5 @@ body {
 .deal p {
   font-size: 12px;
   font-weight: bold;
-  color: #bbbbbb;
+  color: #222222; /* improved contrast */
 }
